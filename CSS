@@ -30,8 +30,9 @@ body{
 #navbar ul{
   display: block;
   padding: 10px;
+  padding left: 45px
   margin: 10px; 
-    background: #52FFA9;
+  background: #52FFA9;
   color: inherit;
   text-decoration: none;
 }
@@ -39,10 +40,10 @@ body{
      background: #5252FF;
    color: #52FFA9;
 }
-a{
+ #navbar a{
   color: #52FFA9;
-  text-transform: uppercase;
   font-weight: 600;
+  cursor:pointer;
 }
 a:hover{
 color: #5252FF;
@@ -122,6 +123,4 @@ code{
     position: absolute;
     top: 0px;
   }
-}
-
 }
