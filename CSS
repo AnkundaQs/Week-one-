@@ -36,91 +36,86 @@ body{
   color: inherit;
   text-decoration: none;
 }
-.nav-link:hover{
-     background: #5252FF;
-   color: #52FFA9;
+ #navbar li{
+  background: #5252FF;
+  color: #52FFA9;
+  padding-left:45px
+  padding:10px;
+  list-style:none;
+  border-bottom-width:0px;
+  border:1px solid;
 }
  #navbar a{
   color: #52FFA9;
   font-weight: 600;
   cursor:pointer;
 }
-a:hover{
-color: #5252FF;
-}
-.highlight{
-  background: #A9FF52;
-  font-weight: 600;
-}
-main{
+#main-doc{
   position: absolute;
-  left: 30%;
-  top: 0%;
-  width:70%;
-  max-width: 980px;
+  margin-left: 310px;
+  margin-bottom:110px;
   background: #FF8A80;
 }
-.main-section{
+ section article{
   border: black 1px solid;
   padding: 10px 20px;
   box-sizing: border-box;
-}
-h2,h3{
   margin-bottom: 0px;
-}
-p{
   margin-top: 0px;
+  font-size:0.96em;
 }
-
+section li{
+margin:15px 0px 25px;
+}
 code{
   display: block;
   background: #FFBEBE;
+  white-space:pre;
+  position:relative;
+  padding:15px;
+  margin:10px;
+  border-radius:5px;
+  line-height:2;
+  word-wrap:normal;
+  word-break: normal;
+  text-align:left;
 }
 @media(max-width: 800px){
-  body{
-    display: flex;
-    flex-direction: column;
-  }
-  .button--hamburger{
-  display: block;
-    align: left;
+  #navbar ul{
+  height:200px;
+  border1px solid;
 }
-  
-  
-  nav{
-    position: fixed;
-    top: -175px;
-    height: 175px;
+  #navbar{
+    position: absolute;
+    top: opx;
+    height: 250px;
      width: 100%;
     max-width: 800px;
-    z-index: 2;
+    z-index: 1;
     overflow: auto;
   transition: top 0.5s;
+  border:none;
+  border-bottom:2px solid;
+    }
+  #main-doc section{
+ background: #FF5252;
+ position: relative;
+ margin-left:0px;
+ margin-top:270px;
   }
-  .link-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-/*    display: flex;
-     flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;*/
-    background: #FF5252;
-  }
-  
-  .nav-link{
-    margin: 2px;
-  }
-  
-  #nav-hamburger:checked ~ #navbar{
-   top: 0px;
-    transition: top 0.5s;
-  }
-  
-  main{
-    left: 0px;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-  }
+ #main-doc section {
+ /* padding-top:240px; */
+ }
+ 
+ {
+    @media(max-width: 400px)  } 
+    #main-doc{
+        margin-left: -10px;
+    }
+    code{
+        width:100%;
+        padding:15px;
+        min-width:233px;
+        margin-left: -20px;
+    }
 }
